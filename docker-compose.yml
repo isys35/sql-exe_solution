@@ -1,0 +1,10 @@
+services:
+  postgress:
+    environment:
+      POSTGRES_DB: sql_exe
+      POSTGRES_USER: postgres_user
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5432:5432
+    build:
+      context: .
